@@ -149,3 +149,11 @@ body, input, textarea, button {
     max-height: none;
 }
 
+@media (max-width: 768px) {
+    html {
+      font-size: 87.5%;
+    }
+    .wrapper {
+      grid-template-columns: 1fr;
+    }
+  }
