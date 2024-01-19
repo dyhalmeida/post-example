@@ -136,3 +136,16 @@ body, input, textarea, button {
 .form > footer button[type=button]:hover {
     background-color: var(--green-300);
 }
+
+/* Hidden footer with button */
+.form > footer {
+    visibility: hidden;
+    max-height: 0;
+}
+
+/* Show footer with button when focus within form elements */
+.form:focus-within > footer {
+    visibility: visible;
+    max-height: none;
+}
+
